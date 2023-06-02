@@ -1,9 +1,12 @@
-import './App.css';
 import { HelloWorld } from './HelloWorld';
+import { PageStyle } from './Style/PageStyle';
 
 function App() {
   return (
-    <HelloWorld />
+    <PageStyle.Page>
+      <HelloWorld />
+    </PageStyle.Page>
+    
   );
 }
 

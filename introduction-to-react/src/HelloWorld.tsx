@@ -1,7 +1,9 @@
+import { TextStyle } from "./Style/Components/TextStyle";
+
 export const HelloWorld = () => {
     return (
-      <div>
-        <h1>Hello World</h1>
-      </div>
+      <TextStyle.Textbox>
+        <TextStyle.Title>Hello World</TextStyle.Title>
+      </TextStyle.Textbox>
     );
   };
