@@ -38,3 +38,33 @@ In this step we will add some styled components. Styled Components in React is a
 - Now we can define our `GlobalStyle`, after that we need to import it in `index.tsx`.
 - We can now add two additional styled components `PageStyle.ts` and `TextStyle.ts`.
 - Now we can replace the html tags in the `HelloWorld` component with the styled components.
+
+## 4. Routing
+Now we will add a second page to our react appilication.
+- To start we first need to install `npm install react-router-dom`. This package provides the routing functionality for our application.
+- Now we restructure the project a bit. We add two new folders "Pages" and "Components".
+- In the "pages" folder we add a new file called "Home.tsx". Most of the code we can copy here from the "App.tsx" file. After that we create an "About.tsx" file in the "pages" folder.
+- We can now rewrite the "App.tsx" file to use the routing functionality and the Navigation. The code should look like this:
+```javascript
+function App() {
+  return (
+    <BrowserRouter>
+      <NavigationStyle.Container>
+        <NavLink to="/">
+          <NavigationStyle.Link>Home</NavigationStyle.Link>
+        </NavLink>
+        <NavLink to="/about">
+          <NavigationStyle.Link>About</NavigationStyle.Link>
+        </NavLink>
+      </NavigationStyle.Container>
+
+      <Routes>
+        <Route path="" element={<Home />} />
+        <Route path="about" element={<About />} />
+      </Routes>
+    </BrowserRouter>
+  );
+}
+```
+- In the code above we see that I've used a `NavigationStyle` component. This is the styled component for the navigation, I've already added this here `Style/Components/NavigationStyle.ts`.
+- Last but not least I've moved the `HelloWorld` component to the "Components" folder. And duplicated it and renamed that to `AboutWidget.tsx`. This component we can use in the `About.tsx` page, instead if the `HelloWorld` component.

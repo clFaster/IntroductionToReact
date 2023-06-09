@@ -11,4 +11,10 @@ export const TextStyle = {
     Title: styled.h1`
         color: #fff;
         `,
+    Subtitle: styled.h2`
+        color: #fff;
+        `,
+    Text: styled.p`
+        color: #fff;
+        `,
 }
