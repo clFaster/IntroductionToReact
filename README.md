@@ -68,3 +68,11 @@ function App() {
 ```
 - In the code above we see that I've used a `NavigationStyle` component. This is the styled component for the navigation, I've already added this here `Style/Components/NavigationStyle.ts`.
 - Last but not least I've moved the `HelloWorld` component to the "Components" folder. And duplicated it and renamed that to `AboutWidget.tsx`. This component we can use in the `About.tsx` page, instead if the `HelloWorld` component.
+
+## 5. Context
+In this step we will add a context to our application. A context provides a way to pass data through the component tree without having to pass props down manually at every level. In our example we will use the context to store and fetch blog posts.
+- First we will add a new folder called `Models` to the project. In this folder we will create a file called `BlogPost.ts`. Here we can define our blog post model.
+- Then we add a new folder called `Context` to the project. In this folder we will create a file called `BlogDataContext.tsx`. Here we can define our context.
+- In the `public` folder we add a file called `posts.json`, this file contains our fake blog posts.
+- In the `Home` component we will add a button to create a new blog post. This button will call a function in the `BlogDataContext` to create a new blog post.
+- The last step will be to add a new Component called `BlogEntry.tsx` to the `Components` folder. This component will be used to display a single blog post. In the `Home` component we will show one `BlogEntry.tsx` for each blog post.

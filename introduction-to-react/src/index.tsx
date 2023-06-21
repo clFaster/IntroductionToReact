@@ -1,16 +1,19 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-import { GlobalStyle } from './Style/GlobalStyle';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import { BlogDataProvider } from "./Shared/Context/BlogDataContext";
+import { GlobalStyle } from "./Style/GlobalStyle";
 
 const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
+  document.getElementById("root") as HTMLElement
 );
 root.render(
   <React.StrictMode>
     <GlobalStyle />
-    <App />
+    <BlogDataProvider>
+      <App />
+    </BlogDataProvider>
   </React.StrictMode>
 );
 

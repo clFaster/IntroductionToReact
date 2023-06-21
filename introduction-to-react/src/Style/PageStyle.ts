@@ -14,4 +14,13 @@ export const PageStyle = {
         -moz-box-shadow:0px 15px 50px 1px #5B82662F ;
         box-shadow:0px 15px 50px 1px #5B82662F ;
         `,
+    BlogPost: styled.div`
+        position: relative;
+        padding: 10px;
+        background-color: #3E6259;
+        margin-bottom: 10px;
+        border-radius:5px;
+        -moz-border-radius:5px;
+        -webkit-border-radius:5px;
+        `,
 }

@@ -1,0 +1,25 @@
+{
+    "blogPosts": [
+      {
+        "id": 1,
+        "title": "First Blog Post",
+        "subtitle": "Introduction to GPT-3.5",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "creationDate": "2023-06-01T08:30:00Z"
+      },
+      {
+        "id": 2,
+        "title": "Second Blog Post",
+        "subtitle": "Deep Dive into ChatGPT",
+        "content": "Praesent commodo eget purus et iaculis.",
+        "creationDate": "2023-06-03T14:45:00Z"
+      },
+      {
+        "id": 3,
+        "title": "Third Blog Post",
+        "subtitle": "Using GPT for Natural Language Processing",
+        "content": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris scelerisque vitae odio ac rutrum.",
+        "creationDate": "2023-06-06T11:15:00Z"
+      }
+    ]
+  }
